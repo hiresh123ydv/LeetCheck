@@ -3,7 +3,7 @@
  * Endpoint: /analyze/{username} and /roast/{username}
  */
 
-const API_BASE = import.meta.env.VITE_API_BASE_URL || '';
+const API_BASE = import.meta.env.VITE_API_URL || '';
 
 export async function analyzeUser(username) {
   const cleanUsername = username.trim();
@@ -21,7 +21,7 @@ export async function analyzeUser(username) {
       },
     });
   } catch (err) {
-    throw new Error('Unable to reach the LeetCheck backend server. Ensure the server is running on http://127.0.0.1:8000.');
+    throw new Error('Unable to reach the LeetCheck backend server.');
   }
 
   if (!analyzeRes.ok) {
