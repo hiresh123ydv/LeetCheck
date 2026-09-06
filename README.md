@@ -162,10 +162,6 @@ VITE_API_BASE_URL=http://localhost:8000
 
 ---
 
-## 📄 License
-
-MIT — use it, fork it, roast your friends with it.
-
 ---
 
 *Built with chai, sarcasm, and one too many LeetCode sessions.* ☕
